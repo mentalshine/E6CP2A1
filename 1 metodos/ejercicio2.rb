@@ -4,11 +4,13 @@
 def random
   result = [true, false].sample
   puts result
+  return result
 end
 
-if random == true
+valor = random
+if valor == true
   puts 'sí'
-elsif random == false
+elsif valor == false
   puts 'no'
 else
   puts 'error'
