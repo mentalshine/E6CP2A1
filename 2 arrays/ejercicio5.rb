@@ -8,9 +8,15 @@ products = %w(Producto1 Producto2 Producto3 Producto4)
 prices = %w[1000 2000 1500 950]
 
 html = ''
-products.each do |i|
-  html += "<div class='product'>"
-  html += "</div>\n"
-end
+
+  products.each do |i|
+    html += "<div class='product'>"
+    html += "<p> #{i} "
+    html += "</p>"
+    html += "<p> "
+    html += prices[0..3].to_s
+    html += " </p>"
+    html += "</div>\n"
+  end
 
 puts html

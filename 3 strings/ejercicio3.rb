@@ -6,3 +6,27 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+#concatenacion
+#print a + b
+#ó
+#a.concat(b)
+
+#unión
+#a.include?('Domingo')
+#a.include?('martes')
+
+union=[]
+a.each do |e|
+  if !b.include?(e)
+    union << e
+  end
+end
+b.each do |e|
+  if !a.include?(e)
+    union << e
+  end
+end
+
+# el símbolo << es para incluir un elemento dentro de un arreglo
+print union.uniq

@@ -3,5 +3,20 @@
 # hint: El método .include? de un string busca si un caracter
 # o string dado está contenido en éste.
 
-cadena = 'Hola Mundo!'
+
+
+def buscar(string, caracter)
+  if string.include?('Hola Mundo!')
+    return true
+  else
+    false
+  end
+  if caracter.include?('o')
+    return true
+  else
+    false
+  end
+end
+string = 'Hola Mundo!'
 caracter = 'o'
+puts buscar(string, caracter)

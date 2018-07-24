@@ -11,10 +11,10 @@ def draw_line(size)
 end
 
 def draw_lines(size)
-  size.times do |i|
-  draw_line(5)
-end
+  size.times do
+    draw_line(5)
+  end
 end
 #draw_line(5)
 
-draw_lines 4
+draw_lines(5)

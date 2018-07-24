@@ -6,9 +6,5 @@ def check5(num)
   return false if num <= 5
 end
 
-
-
-
-
-puts check5(5) # Debería ser false
+puts check5(0) # Debería ser false
 puts check5(6) # Debería ser true
